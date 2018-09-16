@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">CameraTestApp</string>
+
+    <string name="item_new">New</string>
+    <string name="item_import">Import</string>
+    <string name="item_saved">Saved</string>
+</resources>
