@@ -3,21 +3,41 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    xmlns:adnroid="http://schemas.android.com/apk/res-auto"
     tools:context=".NewFragment">
 
     <ImageView
         android:id="@+id/icon_build"
-        android:layout_width="300dp"
-        android:layout_height="300dp"
-        android:layout_centerInParent="true"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_alignParentTop="true"
         android:src="@drawable/icon_build"/>
+        <!--
+        android:layout_centerInParent="true"
+        -->
+
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@id/icon_build"
-        android:layout_centerHorizontal="true"
+        android:layout_toRightOf="@id/icon_build"
         android:text="New fragment text here"
         android:textSize="30sp"/>
+        <!--
+        android:layout_below="@id/icon_build"
+        android:layout_centerHorizontal="true"
+        -->
+    <Button
+        android:id="@+id/button_openpage"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_below="@id/icon_build"
+        android:text="Open Website"/>
+        <!--
+        Using OnClickListener in fragment via id
+        so below method is not being used
+        android:onClick="onClickWebOpenPageButton"
+        -->
+
 
 </RelativeLayout>
